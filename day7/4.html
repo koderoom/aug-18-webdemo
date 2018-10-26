@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Sizing</title>
+
+    <style>
+        html, body {
+            margin:0px;
+        }
+
+        .make-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textify{
+            color:ghostwhite;
+            font-size: xx-large;
+        }
+
+        .bimg {
+            border:10px solid transparent;
+            border-image: url("2.png") 20 round;
+        }
+
+        .bimg1 {
+            border:20px solid transparent;
+            border-image: url("3.jpg") 100 round;
+            border-radius: 5px;
+        }
+
+        .bimg2 {
+            border:50px solid transparent;
+            border-image: url("5.jpg") 100 round;
+        }
+    </style>
+</head>
+<body>
+    
+    <div style="background:rgb(44, 124, 124); height:60px; ">
+    </div>
+
+    <div class="bimg2" style="width: 50%; height:250px; box-sizing: border-box;">
+    </div>
+
+    <div class="make-center textify" style="width: 400px; height:150px; border:10px solid tomato; padding: 10px; background:gold; margin-bottom: 1px; border-radius: 5px; box-sizing: border-box;">
+        HELLO WORLD
+    </div>
+
+    <div class="make-center textify " style="width: 400px; height:150px; background:royalblue; margin-bottom: 1px; border-radius: 5px;">
+        HELLO UNIVERSE
+    </div>
+
+    <div class="bimg " style="width: 400px; height:150px; box-sizing: border-box;">
+    </div>
+
+    <div class="bimg1 " style="width: 400px; height:150px; box-sizing: border-box;">
+    </div>
+
+</body>
+</html>

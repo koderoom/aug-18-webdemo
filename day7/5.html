@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Sizing</title>
+
+    <style>
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin:0px;
+        }
+
+        .make-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textify{
+            color:palevioletred;
+            font-size: 100px;
+            font-family: cursive;
+        }
+
+
+        .bimg {
+            border:50px solid transparent;
+            border-image: url("5.jpg") 100 round;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="bimg make-center textify" style="height:calc(100% - 100px);">
+        Hello Universe
+    </div>
+
+
+</body>
+</html>
