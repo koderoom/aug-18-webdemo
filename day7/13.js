@@ -14,6 +14,9 @@ let chatMessage = ()=>{
 
     let parentNode = document.getElementById("parent");
     parentNode.appendChild(cloneNode);
+
+    parentNode.scrollTo(0,parentNode.scrollHeight);
+    // window.scrollTo(0, document.querySelector("#parent").scrollHeight);
 }
 
 setInterval(chatMessage, 2000);
