@@ -28,7 +28,7 @@
             var lastDivOffset = lastDiv.offsetTop + lastDiv.clientHeight;
             var pageOffset = window.pageYOffset + window.innerHeight;
 
-            if(pageOffset > lastDivOffset - 20) {
+            if(pageOffset > lastDivOffset - 150) {
                 let firstChildRef = document.querySelector("#scroll > div:first-child");
                 let cloneRef = firstChildRef.cloneNode(true);
 
@@ -40,7 +40,7 @@
     </script>
 </head>
 <body>
-    <div id="scroll" style="height:100%;border:2px solid tomato;overflow-y: scroll">
+    <div id="scroll" style="height:120%;border:2px solid tomato;overflow-y: scroll">
         <div class="make-center textify" style="height:100px; margin-bottom: 2px; ">
             HELLO WORLD
         </div>
