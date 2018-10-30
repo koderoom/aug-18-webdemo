@@ -12,11 +12,18 @@ let chatMessage = ()=>{
     cloneNode.removeAttribute("id");
     cloneNode.style.visibility="visible";
 
+    let chatboxId = document.getElementById("chatbox");
+    if(chatboxId.value){
+        cloneNode.children[1].children[0].children[0].innerHTML = chatboxId.value;
+
+        chatboxId.value = "";
+    }
+
     let parentNode = document.getElementById("parent");
     parentNode.appendChild(cloneNode);
 
-    parentNode.scrollTo(0,parentNode.scrollHeight);
+    parentNode.scrollTo(0, parentNode.scrollHeight);
     // window.scrollTo(0, document.querySelector("#parent").scrollHeight);
 }
 
-setInterval(chatMessage, 2000);
+setInterval(chatMessage, 10000);
