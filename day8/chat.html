@@ -16,6 +16,7 @@
 </head>
 <body>
     
+    <!-- NAV HEADER -->
     <div class="container-fluid sticky-top" >
         <div class="row bg-danger text-light" style="height:50px; ">
             <div class="col-3 make-left textify" style="font-family:monospace">
@@ -25,32 +26,34 @@
     </div>
 
 
+    <!-- PARENT CONTAINER -->
     <div class="container-fluid " style="height:calc(100vh - 120px); overflow-y: scroll;" id="parent">
-
-        
     </div>
 
+
+    <!-- FIXED FOOTER CHAT BOX -->
     <div class="container-fluid fixed-bottom" >
-        <div class="row   text-light" style="height:60px; ">
-            <div class="col-3">
+        <div class="row text-light" style="height:60px; ">
+            <div class="d-none d-sm-none d-md-block col-md-3">
             </div>
 
-            <div class="col-6 bg-danger   rounded make-center">
+            <div class="col-12 col-sm-12 col-md-6 bg-danger   rounded make-center">
                 <input id="chatbox" class="form-control form-control" type="text" placeholder="Type a message">
                 <button type="button" class="btn btn-danger" onclick="chatMessage()">Submit</button>
             </div>
 
-            <div class="col-3">
+            <div class="d-none d-sm-none d-md-block col-md-3">
             </div>
         </div>
     </div>
 
 
+    <!-- REF BLOCK HE -->
     <div class="row mt-1" id="she" style="visibility:hidden">
-            <div class="col-3">
+            <div class="d-none d-sm-none d-md-block col-md-3">
             </div>
 
-            <div class="col-6 border-left border-right text-light" >
+            <div class="col-12 col-sm-12 col-md-6 border-left border-right text-light" >
                 <div class="row">
                     <div class="offset-7 col-5 bg-danger p-1 rounded textify text-right" style="opacity:0.7;">
                         Hello
@@ -58,16 +61,17 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="d-none d-sm-none d-md-block col-md-3">
             </div>
     </div>
 
 
+    <!-- REF BLOCK SHE -->
     <div class="row mt-1" id="he" style="visibility: hidden;">
-        <div class="col-3">
+        <div class="d-none d-sm-none d-md-block col-md-3">
         </div>
 
-        <div class="col-6 border-left border-right text-light" >
+        <div class="col-12 col-sm-12 col-md-6 border-left border-right text-light" >
             <div class="row">
                 <div class="col-5 bg-primary p-1 rounded textify" style="opacity:0.7;">
                     Hie
@@ -75,7 +79,7 @@
             </div>
         </div>
 
-        <div class="col-3">
+        <div class="d-none d-sm-none d-md-block col-md-3">
         </div>
     </div>
 </body>
