@@ -31,3 +31,10 @@ setInterval(chatMessage, 4000);
 window.addEventListener('load', ()=> {
     chatMessage();
 });
+
+document.addEventListener("keydown", (event)=> {
+    let chatboxId = document.getElementById("chatbox");
+    if(event.which === 13 && chatboxId.value){
+        chatMessage();
+    }
+});
