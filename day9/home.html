@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
 </head>
 <body>
     
@@ -31,25 +33,29 @@
     </div>
 
 
+    <!--FOR CAPUTRE POST-->
     <div class="container-fluid">
-        <div class="row" style="height:85vh">
+        <div class="row mt-1" style="height:100px">
             
-            <div class="col-3">
+            <div class="col-2">
             </div>
 
-            <div class="col-6 make-center ">
-                    <div class="card" style="width:100%">
-                            <div class="card-header">
-                              REGISTER
-                            </div>
-                            <div class="card-body">
-                                <input class="form-control form-control-lg mb-1" type="text" placeholder="Enter username">
-                                <input class="form-control form-control-lg mb-1" type="password" placeholder="Enter password">
-                                <input class="form-control form-control-lg mb-1" type="email" placeholder="Enter email">
-                                <input class="form-control form-control-lg mb-2" type="number" placeholder="Enter mobile">
-                                <a href="#" class="btn btn-secondary">REGISTER HERE</a>
-                            </div>
-                    </div>
+            <div class="col-8 bg-secondary rounded make-center">
+                <input class="form-control form-control-lg mr-1" type="text" placeholder="Write here...">
+                <button type="button" class="btn btn-lg btn-light" onclick="postHere(this)">POST HERE</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOR DYNAMIC BLOCKS -->
+    <div class="container-fluid" id="parent">
+        <div class="row mt-2 animated pulse"  style="height:150px;">
+            <div class="col-2">
+            </div>
+
+            <div class="col-8 bg-secondary rounded make-center text-light textify">
+                Reference Block;
             </div>
         </div>
     </div>
