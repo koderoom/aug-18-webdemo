@@ -19,6 +19,15 @@
     npm run dev
 ```
 
+# ASSIGNMENTS - DAY10
+* Basics of Function
+* Annoynymous function
+* Lamda function
+* Callback using - basic function
+* Callback using - Annonymous.
+* Callback using - lamda;
+* Run JavaScript program in console.
+* Debug JavaScript program.
 
 
 # ASSIGNMENTS - DAY5

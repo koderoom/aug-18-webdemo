@@ -11,4 +11,3 @@ function demo(){
     console.log(d);
 }
 demo();
-
