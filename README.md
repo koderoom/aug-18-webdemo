@@ -19,6 +19,15 @@
     npm run dev
 ```
 
+# ASSIGNMENTS - DAY 11
+* Working with JSON.
+* Working with nested JSON.
+* Access JSON DATA MEMBER.
+* UPDATE JSON DATA MEMBER
+* Working with array.
+* Working with array of JSON.
+
+
 # ASSIGNMENTS - DAY10
 * Basics of Function
 * Annoynymous function
