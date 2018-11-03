@@ -3,7 +3,7 @@
 let makeAjaxRequest = function(){
     try{
         /*
-            http://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=7023923dd26a725da995c75b65864de5
+            https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=7023923dd26a725da995c75b65864de5
         */
         let boxRef = document.getElementById("boxid");
         let city = boxRef.value;
@@ -13,7 +13,7 @@ let makeAjaxRequest = function(){
         }
 
         let appid = "7023923dd26a725da995c75b65864de5";
-        let serverUrl = "http://api.openweathermap.org/data/2.5/weather?";
+        let serverUrl = "https://api.openweathermap.org/data/2.5/weather?";
         serverUrl += "q=" + city;
         serverUrl += "&appid=" + appid;
         serverUrl += "&units=metric"
