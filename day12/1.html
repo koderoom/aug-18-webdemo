@@ -6,9 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="1.js"></script>
+    <link rel="stylesheet" href="1.css">
 </head>
 <body>
-    Hello World
+    
+    <div class="container-fluid">
+        <div class="row bg-dark" style="height:4rem;">
+            <div class="col-3 text-light make-left">
+                Weather Book
+            </div>
+
+            <div class="col-7 make-center">
+                <input id="boxid" type="text" class="form-control form-control-lg mr-1">
+                <button onclick="makeAjaxRequest()" type="button" class="btn">Search Here</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="parent">
+        <div class="row mt-1" id="refBlock">
+            <div class="col-3"></div>
+
+            <div class="col-6 bg-light make-center textify" style="height:150px">
+                <span>Mumbai</span>
+                <span class="ml-1 badge badge-primary rounded">32</span> 
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+    </div>
+
 </body>
 </html>

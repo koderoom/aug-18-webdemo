@@ -1,0 +1,16 @@
+.make-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textify{
+    font-size: x-large;
+    
+}
