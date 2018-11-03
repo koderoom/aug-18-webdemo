@@ -12,5 +12,10 @@
 
 .textify{
     font-size: x-large;
-    
+}
+
+.title{
+    font-family: monospace;
+    font-size: x-large;
+    font-weight: bold;
 }
