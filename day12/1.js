@@ -15,7 +15,7 @@ let makeAjaxRequest = function(){
         let promise = fetch(serverUrl);
         promise.then(function(response){
             
-            retrun response.json();
+            return response.json();
         }).then(function(jsonData){
 
             console.log(jsonData);
