@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat layout design and simulation</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+
+    <link rel="stylesheet" href="chat-with-emojis.css">
+    
+    <script src="chat-with-emojis.js"></script>
+</head>
+<body>
+    
+    <!-- NAV HEADER -->
+    <div class="container-fluid sticky-top" >
+        <div class="row bg-danger text-light" style="height:4rem; ">
+            <div class="col-3 make-left textify" style="font-family:monospace">
+                CHATBOOK
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PARENT CONTAINER -->
+    <div class="container-fluid " style="height:calc(100vh - 10rem); overflow-y: scroll;" id="parent">
+    </div>
+
+
+    <!-- FIXED FOOTER CHAT BOX -->
+    <div class="container-fluid fixed-bottom" >
+        <div class="row text-light" style="height:4rem; ">
+            <div class="d-none d-sm-none d-md-block col-md-3">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 bg-danger   rounded make-center">
+                <input id="chatbox" class="form-control form-control" type="text" placeholder="Type a message">
+                <button type="button" class="btn btn-danger" onclick="chatMessage()">Submit</button>
+            </div>
+
+            <div class="d-none d-sm-none d-md-block col-md-3">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REF BLOCK HE -->
+    <div class="row mt-1" id="she" style="visibility:hidden">
+            <div class="d-none d-sm-none d-md-block col-md-3">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 border-left border-right text-light" >
+                <div class="row">
+                    <div class="offset-7 col-5 bg-danger p-1 rounded textify text-right" style="opacity:0.7;">
+                        Sheeee
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-none d-sm-none d-md-block col-md-3">
+            </div>
+    </div>
+
+
+    <!-- REF BLOCK SHE -->
+    <div class="row mt-1" id="he" style="visibility: hidden;">
+        <div class="d-none d-sm-none d-md-block col-md-3">
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 border-left border-right text-light" >
+            <div class="row">
+                <div class="col-5 bg-primary p-1 rounded textify" style="opacity:0.7;">
+                    Heeeee
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none d-sm-none d-md-block col-md-3">
+        </div>
+    </div>
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126893615-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126893615-1');
+</script>
+
+
+<!-- adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3527343845075374",
+    enable_page_level_ads: true
+  });
+</script>
+
+</html>
