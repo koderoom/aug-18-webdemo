@@ -28,13 +28,13 @@ let chatMessage = (message)=>{
 setInterval(()=>{
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
-    chatMessage(messageList[randomMesage]);
+    // chatMessage(messageList[randomMesage]);
 }, 4000);
 
 window.addEventListener('load', ()=> {
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
-    chatMessage(messageList[randomMesage]);
+    // chatMessage(messageList[randomMesage]);
 });
 
 document.addEventListener("keydown", (event)=> {
