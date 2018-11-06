@@ -22,19 +22,19 @@ let chatMessage = (message)=>{
     parentNode.appendChild(cloneNode);
 
     parentNode.scrollTo(0, parentNode.scrollHeight);
-    // window.scrollTo(0, document.querySelector("#parent").scrollHeight);
+    window.scrollTo(0, document.querySelector("#parent").scrollHeight);
 }
 
 setInterval(()=>{
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
-    // chatMessage(messageList[randomMesage]);
+    chatMessage(messageList[randomMesage]);
 }, 4000);
 
 window.addEventListener('load', ()=> {
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
-    // chatMessage(messageList[randomMesage]);
+    chatMessage(messageList[randomMesage]);
 });
 
 document.addEventListener("keydown", (event)=> {
