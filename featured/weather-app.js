@@ -29,10 +29,9 @@ let makeAjaxRequest = function(){
             // return response.text()
         }).then(function(jsonData){
 
-            console.log(jsonData);
-
             let refBlock = document.getElementById("refBlock");
             let newBlock = refBlock.cloneNode(true);
+            newBlock.classList.remove("invisible");
             newBlock.removeAttribute("id");
 
             let firstDay = jsonData.list[0];
@@ -43,6 +42,19 @@ let makeAjaxRequest = function(){
             newBlock.children[1].children[1].children[0].children[1].children[0].innerHTML = `${temprature}<sup>o</sup>`;
 
             // forecasts
+            for(let i=0; i<jsonData.list.length; i++){
+                let iref = jsonData.list[i];
+                
+                let forecastNewBlock = document.getElementById("forecastRef").cloneNode(true);
+                forecastNewBlock.classList.remove("invisible");
+                forecastNewBlock.removeAttribute("id");
+
+                forecastNewBlock.children[2].children[0].innerHTML = `${iref.temp.max}<sup>o</sup>`;
+                forecastNewBlock.children[3].children[0].innerHTML = `${iref.temp.min}<sup>o</sup>`;
+
+                let parentRef = newBlock.children[1].children[2];
+                parentRef.appendChild(forecastNewBlock);
+            }
 
             let parentBlock = document.getElementById("parent");
             parentBlock.insertBefore(newBlock, parentBlock.firstChild);
