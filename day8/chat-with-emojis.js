@@ -18,6 +18,9 @@ let chatMessage = (message)=>{
     cloneNode.children[1].children[0].children[0].innerHTML = chatboxId.value || message;
     chatboxId.value = "";
 
+    // collapse the emojis
+    $("#navbarNav").collapse("hide");
+
     let parentNode = document.getElementById("parent");
     parentNode.appendChild(cloneNode);
 
