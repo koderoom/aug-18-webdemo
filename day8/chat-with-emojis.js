@@ -53,9 +53,16 @@ let appendEmojiChildBlocks = function(){
         let emojiParentRef = document.getElementById('emojiParentRef');
         let refBlock = emojiParentRef.children[0];
 
-        for(let i=0; i<20; i++){
+        let refPoint = 128512;
+        for(let i=0; i<80; i++){
+
             let newEmojiChild = refBlock.cloneNode(true);
+            newEmojiChild.style.display = "inline-block";
+            newEmojiChild.children[0].innerHTML = "&#" + refPoint;
+
             emojiParentRef.appendChild(newEmojiChild);
+
+            refPoint++;
         }
     }catch(err){
         console.log(err);
