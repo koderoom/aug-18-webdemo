@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Chat layout design and simulation, whatsapp web simulation">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap, Whtasapp web">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat layout design and simulation</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+
+    <link rel="stylesheet" href="./weather-app.css">
+    
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./weather-app.js"></script>
+</head>
+<body>
+    
+    <div class="container-fluid sticky-top">
+        <div class="row bg-dark" style="height:4rem;">
+            <div class="col-3 text-light make-left title">
+                Weather Report
+            </div>
+
+            <div class="col-7 make-center">
+                <input id="boxid" type="text" class="form-control form-control-lg mr-1">
+                <button onclick="makeAjaxRequest()" type="button" class="btn">Search Here</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="parent">
+        <div class="row mt-1" id="refBlock">
+            <div class="col-3"></div>
+
+            <div class="col-6 bg-light make-center textify" style="height:150px">
+                <span>Mumbai</span>
+                <span class="ml-1 badge badge-primary rounded">32</span> 
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126893615-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126893615-1');
+</script>
+
+
+<!-- adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3527343845075374",
+    enable_page_level_ads: true
+  });
+</script>
+</html>
