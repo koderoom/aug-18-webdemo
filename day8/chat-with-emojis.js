@@ -29,9 +29,12 @@ setInterval(()=>{
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
     chatMessage(messageList[randomMesage]);
-}, 4000);
+}, 10000);
 
 window.addEventListener('load', ()=> {
+    // add emoji childs
+    appendEmojiChildBlocks();
+
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
     chatMessage(messageList[randomMesage]);
@@ -43,3 +46,18 @@ document.addEventListener("keydown", (event)=> {
         chatMessage();
     }
 });
+
+
+let appendEmojiChildBlocks = function(){
+    try{
+        let emojiParentRef = document.getElementById('emojiParentRef');
+        let refBlock = emojiParentRef.children[0];
+
+        for(let i=0; i<20; i++){
+            let newEmojiChild = refBlock.cloneNode(true);
+            emojiParentRef.appendChild(newEmojiChild);
+        }
+    }catch(err){
+        console.log(err);
+    }
+}
