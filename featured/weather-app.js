@@ -12,10 +12,13 @@ let makeAjaxRequest = function(){
             city = "Raniganj";
         }
 
+        let cnt = 7;
+
         let appid = "7023923dd26a725da995c75b65864de5";
-        let serverUrl = "https://api.openweathermap.org/data/2.5/weather?";
+        let serverUrl = "https://api.openweathermap.org/data/2.5/forecast/daily?";
         serverUrl += "q=" + city;
         serverUrl += "&appid=" + appid;
+        serverUrl += "&cnt=" + cnt;
         serverUrl += "&units=metric"
 
         // AJAX REQUEST :: LAYER 1 to LAYER 2
@@ -32,9 +35,11 @@ let makeAjaxRequest = function(){
             let newBlock = refBlock.cloneNode(true);
             newBlock.removeAttribute("id");
 
-            let temprature = jsonData.main.temp;
-            newBlock.children[1].children[0].children[0].innerHTML = jsonData.name;
-            newBlock.children[1].children[1].children[0].children[0].innerHTML = jsonData.weather[0].description;
+            let firstDay = jsonData.list[0];
+            let temprature = firstDay.temp.day;
+
+            newBlock.children[1].children[0].children[0].innerHTML = jsonData.city.name + " - " + jsonData.city.country;
+            newBlock.children[1].children[1].children[0].children[0].innerHTML = firstDay.weather[0].description;
             newBlock.children[1].children[1].children[0].children[1].children[0].innerHTML = `${temprature}<sup>o</sup>`;
 
             // forecasts
