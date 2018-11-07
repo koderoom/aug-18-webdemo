@@ -1,3 +1,4 @@
+let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 
 let makeAjaxRequest = function(){
@@ -45,10 +46,14 @@ let makeAjaxRequest = function(){
             for(let i=0; i<jsonData.list.length; i++){
                 let iref = jsonData.list[i];
                 
+                let dref = new Date(iref.dt * 1000);
+                let sday = days[dref.getDay()];
+
                 let forecastNewBlock = document.getElementById("forecastRef").cloneNode(true);
                 forecastNewBlock.classList.remove("invisible");
                 forecastNewBlock.removeAttribute("id");
 
+                forecastNewBlock.children[0].innerHTML = `${sday}`;
                 forecastNewBlock.children[2].children[0].innerHTML = `${iref.temp.max}<sup>o</sup>`;
                 forecastNewBlock.children[3].children[0].innerHTML = `${iref.temp.min}<sup>o</sup>`;
 
@@ -58,6 +63,8 @@ let makeAjaxRequest = function(){
 
             let parentBlock = document.getElementById("parent");
             parentBlock.insertBefore(newBlock, parentBlock.firstChild);
+
+            boxRef.value = "";
         }).catch(function(err){
             console.log(err);
         });
