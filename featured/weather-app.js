@@ -10,7 +10,7 @@ let makeAjaxRequest = function(){
         let city = boxRef.value;
 
         if(city == ""){
-            city = "Raniganj";
+            city = "Mumbai";
         }
 
         let cnt = 7;
