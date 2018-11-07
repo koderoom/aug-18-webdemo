@@ -9,7 +9,7 @@ let makeAjaxRequest = function(){
         let city = boxRef.value;
 
         if(city == ""){
-            city = "mumbai";
+            city = "Raniganj";
         }
 
         let appid = "7023923dd26a725da995c75b65864de5";
@@ -32,8 +32,12 @@ let makeAjaxRequest = function(){
             let newBlock = refBlock.cloneNode(true);
             newBlock.removeAttribute("id");
 
-            newBlock.children[1].children[0].innerHTML = jsonData.name;
-            newBlock.children[1].children[1].innerHTML = jsonData.main.temp;
+            let temprature = jsonData.main.temp;
+            newBlock.children[1].children[0].children[0].innerHTML = jsonData.name;
+            newBlock.children[1].children[1].children[0].children[0].innerHTML = jsonData.weather[0].description;
+            newBlock.children[1].children[1].children[0].children[1].children[0].innerHTML = `${temprature}<sup>o</sup>`;
+
+            // forecasts
 
             let parentBlock = document.getElementById("parent");
             parentBlock.insertBefore(newBlock, parentBlock.firstChild);
@@ -46,4 +50,7 @@ let makeAjaxRequest = function(){
     }
 };
 
-makeAjaxRequest();
+
+window.addEventListener('load', ()=>{
+    makeAjaxRequest();
+});
