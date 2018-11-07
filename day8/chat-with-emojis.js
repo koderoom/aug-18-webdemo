@@ -29,7 +29,7 @@ setInterval(()=>{
     let boundry = messageList.length - 1;
     let randomMesage = Math.floor(Math.random() * boundry);
     chatMessage(messageList[randomMesage]);
-}, 10000);
+}, 5000);
 
 window.addEventListener('load', ()=> {
     // add emoji childs
@@ -64,6 +64,17 @@ let appendEmojiChildBlocks = function(){
 
             refPoint++;
         }
+    }catch(err){
+        console.log(err);
+    }
+}
+
+let emojiClick = function(ref){
+    try{
+        let emojiData = ref.children[0].innerHTML;
+
+        let chatboxId = document.getElementById("chatbox");
+        chatboxId.value += " " + emojiData;
     }catch(err){
         console.log(err);
     }
