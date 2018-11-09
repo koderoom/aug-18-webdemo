@@ -1,5 +1,6 @@
 ## OUTPUT 
 * [https://koderoom.github.io/aug-18/](https://koderoom.github.io/aug-18/)
+* [https://koderoom.github.io/aug-18/](https://koderoom.github.io/aug-18/)
 
 
 ## SETUP
