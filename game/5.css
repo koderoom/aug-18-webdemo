@@ -15,6 +15,54 @@
     margin-top: 2px;
 }
 
+.magic4{
+    width:0;
+    height: 0;
+    border-top:30px solid royalblue;
+    border-right: 30px solid transparent;
+    border-left: 30px solid royalblue;
+    border-bottom: 30px solid royalblue;
+    border-radius: 30px;
+}
+
+.magic3{
+    width:0;
+    height: 0;
+    border-top:40px solid tomato;
+    border-right: 40px solid royalblue;
+    border-left: 40px solid gold;
+    border-bottom: 40px solid green;
+    border-radius: 50px;
+}
+
+.magic2 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid red;
+    transform: rotate(10deg);
+  }
+  .magic2:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid red;
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+  }
+
+.magic1{
+    width: 0;
+    height: 0;
+    border-top: 100px solid tomato;
+    border-left: 100px solid royalblue;
+}
+
 .magic {
     width:0;
     height: 0;
