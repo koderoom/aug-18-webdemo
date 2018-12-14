@@ -1,0 +1,27 @@
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-shadow {
+    text-shadow: 0px 1px 5px orange, 0 0 5px ghostwhite, 1px 0px 5px green;
+}
+
+.square-box{
+    height: 5rem;
+    border-radius: 5px;
+    border-width: 5px !important;
+    margin-top: 2px;
+}
+
+.magic {
+    width:0;
+    height: 0;
+    border-left: 25vw solid tomato;
+    border-right: 25vw solid royalblue;
+    border-top: 15vh solid gold;
+    border-bottom: 15vh solid green;
+
+    border-radius:15px;
+}
