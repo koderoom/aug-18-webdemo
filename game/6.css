@@ -1,0 +1,104 @@
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-shadow {
+    text-shadow: 0px 1px 5px orange, 0 0 5px ghostwhite, 1px 0px 5px green;
+}
+
+.square-box{
+    height: 5rem;
+    border-radius: 5px;
+    border-width: 5px !important;
+    margin-top: 2px;
+}
+
+#star-six {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid tomato;
+    position: relative;
+  }
+  #star-six:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid tomato;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+  }
+
+
+.magic5 {
+    width:100px;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid green;
+}
+
+.magic4{
+    width:0;
+    height: 0;
+    border-top:30px solid royalblue;
+    border-right: 30px solid transparent;
+    border-left: 30px solid royalblue;
+    border-bottom: 30px solid royalblue;
+    border-radius: 30px;
+}
+
+.magic3{
+    width:0;
+    height: 0;
+    border-top:40px solid tomato;
+    border-right: 40px solid royalblue;
+    border-left: 40px solid gold;
+    border-bottom: 40px solid green;
+    border-radius: 50px;
+}
+
+.magic2 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid red;
+    transform: rotate(10deg);
+  }
+  .magic2:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid red;
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+  }
+
+.magic1{
+    width: 0;
+    height: 0;
+    border-top: 100px solid tomato;
+    border-left: 100px solid royalblue;
+}
+
+.magic {
+    width:0;
+    height: 0;
+    border-left: 25vw solid tomato;
+    border-right: 25vw solid royalblue;
+    border-top: 15vh solid gold;
+    border-bottom: 15vh solid green;
+
+    border-radius:15px;
+}
