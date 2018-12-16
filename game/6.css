@@ -4,8 +4,34 @@
     align-items: center;
 }
 
+.make-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .title-shadow {
     text-shadow: 0px 1px 5px orange, 0 0 5px ghostwhite, 1px 0px 5px green;
+}
+
+.fontify{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: xx-large;
+
+    color:royalblue;
+
+    animation: first 3s linear 2;
+}
+
+@keyframes first {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .square-box{
@@ -36,4 +62,25 @@
     border-radius:15px;
 
     animation: demo 10s infinite;
+}
+
+
+@keyframes demo1{
+    0%   {left:0vw; top:0px; transform: rotate(10deg)}
+    25%  {left: 25vw; top:0px; transform: rotate(100deg)}
+    50%  {left: 46vw; top:0px; transform: rotate(200deg)}
+    100% {left:0vw; top:0px; transform: rotate(360deg)}
+}
+
+.magic1 {
+    width:10px;
+    height: 10px;
+    border-left: 20px solid tomato;
+    border-right: 20px solid royalblue;
+    border-top: 20px solid gold;
+    border-bottom:20px solid green;
+
+    border-radius:10px;
+
+    animation: demo1 5s linear 2s infinite;
 }
