@@ -25,3 +25,23 @@
 .sel-box {
     background:  tomato;
 }
+
+
+/* ANIMATION NAME hdemo; can be applied to any selector. */ 
+@keyframes hdemo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+  
+/* The element to apply the animation to */
+img {
+    width: 100px;
+    height: 100px;
+    animation-name: hdemo;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+  }
