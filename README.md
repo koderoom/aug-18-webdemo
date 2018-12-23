@@ -2,7 +2,6 @@
 * [https://koderoom.github.io/aug-18/](https://koderoom.github.io/aug-18/)
 * [https://koderoom.github.io/aug-18/](https://koderoom.github.io/aug-18/)
 
-
 ## SETUP
 * Development Editor [VSCODE](https://code.visualstudio.com/)
 * [Install Node Js](https://nodejs.org/en/) 
@@ -108,3 +107,5 @@
 * Program-5. Create a page with Image.
 
 
+## NODE_MODULES ISSUE
+* Including node_modules And vendors Folders In Your GitHub Pages Site. created an empty .nojekyll text file in the root of my gh-pages branch. [https://www.bennadel.com/blog/3181-including-node-modules-and-vendors-folders-in-your-github-pages-site.htm](https://www.bennadel.com/blog/3181-including-node-modules-and-vendors-folders-in-your-github-pages-site.htm)
