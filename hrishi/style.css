@@ -17,3 +17,11 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+.common {
+    height: 100px;
+}
+
+.sel-box {
+    background:  tomato;
+}
