@@ -13,7 +13,7 @@
     border-left: 30px solid gold;
     border-radius: 30px;
 
-    animation: ballframe 20s 20, balltranslate 2s 5;
+    animation: ballframe 20s 20;
 }
 
 @keyframes ballframe {
