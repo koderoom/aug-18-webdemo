@@ -12,8 +12,6 @@
     border-bottom: 30px solid blue;
     border-left: 30px solid gold;
     border-radius: 30px;
-
-    animation: ballframe 20s 20;
 }
 
 @keyframes ballframe {
