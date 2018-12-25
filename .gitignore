@@ -12,6 +12,8 @@ node_modules/jquery/*
 node_modules/animate.css/*
 !node_modules/animate.css/animate.css
 
+!node_modules/animejs
+
 
 
 
