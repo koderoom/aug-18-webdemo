@@ -3,3 +3,43 @@
     justify-content: left;
     align-items: center;
 }
+
+.make-ball {
+    width: 0;
+    height: 0;
+    border-top: 30px solid #FF9800;
+    border-right: 30px solid #8BC34A;
+    border-bottom: 30px solid blue;
+    border-left: 30px solid gold;
+    border-radius: 30px;
+
+    animation: ballframe 20s 20, balltranslate 2s 5;
+}
+
+@keyframes ballframe {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes balltranslate {
+    0% {
+        transform: translateX(50px)
+    }
+
+    25%{
+        transform: translateX(100px)
+    }
+
+    50%{
+        transform: translateX(50px)
+    }
+
+    100%{
+        transform: translateX(0px)
+    }
+}
