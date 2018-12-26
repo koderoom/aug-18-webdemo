@@ -32,9 +32,7 @@ let uiAnimate1 = ()=>{
               { value: 0, duration: 1800 }
             ],
             rotate: '5turn',
-            backgroundColor: '#FFF',
             duration: 4000,
-            loop: true
           
         });
     }catch(err){
@@ -45,24 +43,10 @@ let uiAnimate1 = ()=>{
 
 let uiAnimate2 = ()=>{
     try{
-        console.log("UI ANIMATE!!!");
-
         const elem1 = document.querySelector("#id2");
         console.log(elem1);
 
-        anime({
-            targets: elem1,
-            translateX: [
-              { value: 0, duration: 0 },
-              { value: 500, duration: 2200 },
-              { value: 0, duration: 1800 }
-            ],
-            rotate: '5turn',
-            backgroundColor: '#FFF',
-            duration: 4000,
-            loop: true
-          
-        });
+        
     }catch(err){
         console.log(err);
     }

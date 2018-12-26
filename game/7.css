@@ -7,10 +7,14 @@
 .make-ball {
     width: 0;
     height: 0;
-    border-top: 30px solid #FF9800;
-    border-right: 30px solid #8BC34A;
-    border-bottom: 30px solid blue;
-    border-left: 30px solid gold;
+    border: 30px solid gold;
+    border-radius: 30px;
+}
+
+.make-ball2 {
+    width: 0;
+    height: 0;
+    border: 30px solid tomato;
     border-radius: 30px;
 }
 
