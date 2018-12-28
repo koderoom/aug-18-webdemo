@@ -2,8 +2,8 @@ window.onload = ()=>{
     try{
         uiAnimate1();
         uiAnimate2();
-    }catch(err){
-        console.log(err);
+    }catch(errr){
+        console.log(errr);
     }
 }
 
