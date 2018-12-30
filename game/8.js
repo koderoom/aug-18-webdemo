@@ -3,7 +3,7 @@ window.onload = ()=>{
         uiAnimate1();
         uiAnimate2();
     }catch(errr){
-        console.log(errr);
+        console.log(err);
     }
 }
 
