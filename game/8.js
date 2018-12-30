@@ -31,7 +31,7 @@ let uiAnimate1 = ()=>{
               { value: 500, duration: 2200 },
               { value: 0, duration: 1800 }
             ],
-            rotate: '5turn',
+            rotate: '6turn',
             duration: 4000,
           
         });
